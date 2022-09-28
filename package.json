@@ -1,24 +1,40 @@
 {
-  "name": "land-registry-frontend",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
-  },
-  "dependencies": {
-    "next": "12.2.5",
-    "react": "18.2.0",
-    "react-dom": "18.2.0"
-  },
-  "devDependencies": {
-    "@types/node": "18.7.15",
-    "@types/react": "18.0.18",
-    "@types/react-dom": "18.0.6",
-    "eslint": "8.23.0",
-    "eslint-config-next": "12.2.5",
-    "typescript": "4.8.2"
-  }
+	"name": "land-registry-frontend",
+	"version": "0.1.0",
+	"private": true,
+	"scripts": {
+		"dev": "next dev",
+		"build": "next build",
+		"start": "next start",
+		"lint": "next lint",
+		"sass": "sass ./styles/main.scss ./styles/main.css",
+		"tail": "postcss tailwindcss -i ./styles/main.scss -o ./styles/main.css"
+	},
+	"dependencies": {
+		"@drizzle/store": "^1.5.3",
+		"@fortawesome/fontawesome": "^1.1.8",
+		"@fortawesome/fontawesome-svg-core": "^6.2.0",
+		"@fortawesome/free-regular-svg-icons": "^6.2.0",
+		"@fortawesome/free-solid-svg-icons": "^6.2.0",
+		"@fortawesome/react-fontawesome": "^0.2.0",
+		"autoprefixer": "^10.4.12",
+		"axios": "^0.27.2",
+		"daisyui": "^2.31.0",
+		"next": "12.2.5",
+		"react": "18.2.0",
+		"react-dom": "18.2.0",
+		"react-fontawesome": "^1.7.1",
+		"sass": "^1.55.0",
+		"sweetalert2": "^11.4.34"
+	},
+	"devDependencies": {
+		"@types/node": "18.7.15",
+		"@types/react": "18.0.18",
+		"@types/react-dom": "18.0.6",
+		"eslint": "8.23.0",
+		"eslint-config-next": "12.2.5",
+		"postcss": "^8.4.16",
+		"tailwindcss": "^3.1.8",
+		"typescript": "4.8.2"
+	}
 }
