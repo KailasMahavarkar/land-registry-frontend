@@ -93,6 +93,8 @@ const BuyerRegistrationForm = () => {
                 }}
             />
 
+            
+
 			{/* Email */}
 			<FormInputElement 
                 name="Email"

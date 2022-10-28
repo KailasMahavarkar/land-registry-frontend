@@ -1,7 +1,12 @@
 /** @type {import('tailwindcss').Config} */
 
 const daisyui = require('daisyui');
+const typography = require('@tailwindcss/typography');
 
+const childrenSupport = ({ addVariant }) => {
+    addVariant("child", "& > *");
+    addVariant("child-hover", "& > *:hover");
+};
 
 const light = {
     primary: "#105a80",
@@ -43,5 +48,5 @@ module.exports = {
         prefix: "",
         // darkTheme: "light",
     },
-    plugins: [daisyui],
+    plugins: [typography, daisyui, childrenSupport],
 }

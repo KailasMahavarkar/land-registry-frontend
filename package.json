@@ -7,7 +7,7 @@
 		"build": "next build",
 		"start": "next start",
 		"lint": "next lint",
-		"sass": "sass ./styles/main.scss ./styles/main.css",
+		"sass": "sass ./styles/main.scss ./styles/main.css --watch",
 		"tail": "postcss tailwindcss -i ./styles/main.scss -o ./styles/main.css"
 	},
 	"dependencies": {
@@ -17,11 +17,13 @@
 		"@fortawesome/free-regular-svg-icons": "^6.2.0",
 		"@fortawesome/free-solid-svg-icons": "^6.2.0",
 		"@fortawesome/react-fontawesome": "^0.2.0",
+		"@tailwindcss/typography": "^0.5.7",
 		"autoprefixer": "^10.4.12",
 		"axios": "^0.27.2",
 		"daisyui": "^2.31.0",
 		"next": "12.2.5",
 		"react": "18.2.0",
+		"react-d3-tree": "^3.3.5",
 		"react-dom": "18.2.0",
 		"react-fontawesome": "^1.7.1",
 		"sass": "^1.55.0",

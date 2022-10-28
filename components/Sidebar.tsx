@@ -48,6 +48,14 @@ const SideBar = () => {
 					</a>
 				</li>
 			))}
+            <div className="divider"></div>
+            <li className="rounded-md ">
+                <a href="/logout">
+                    <FontAwesomeIcon icon={faUser} size="1x" width="20px" />
+                    Logout
+                </a>
+            </li>
+
 		</ul>
 	);
 };
